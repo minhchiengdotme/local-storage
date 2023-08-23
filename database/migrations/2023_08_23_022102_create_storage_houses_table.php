@@ -13,10 +13,11 @@ return new class extends Migration
     {
         Schema::create('storage_houses', function (Blueprint $table) {
             $table->id();
+            $table->string('name', 255)->nullable(false)->default('');
+            $table->string('slug', 255)->unique()->nullable(false)->default('');
+            $table->string('description', 255)->nullable(false)->default('');
+            $table->boolean('disabled')->nullable(false)->default(0);
             $table->timestamps();
-            $table->string('name', 255)->allowNull(true)->default('null');
-            $table->string('slug', 255)->unique()->allowNull(true)->default('');
-            $table->string('description', 255)->allowNull(true)->default('');
         });
     }
 

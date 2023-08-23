@@ -21,14 +21,10 @@ class Cupboard extends Model
     ];
 
     protected $casts = [
-        'storage_house_id' => 'integer',
+        'storage_house_id'  => 'integer',
         'create_account_id' => 'integer',
         'lastup_account_id' => 'integer',
     ];
-
-    public function product() {
-        return $this->hasMany(Product::class);
-    }
 
 
 }

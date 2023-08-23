@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Item;
+use App\Models\Generic;
 use Illuminate\Http\Request;
 
-class ProductController extends Controller
+class GenericController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,7 +34,7 @@ class ProductController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Item $product)
+    public function show(Generic $generic)
     {
         //
     }
@@ -42,7 +42,7 @@ class ProductController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Item $product)
+    public function edit(Generic $generic)
     {
         //
     }
@@ -50,7 +50,7 @@ class ProductController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Item $product)
+    public function update(Request $request, Generic $generic)
     {
         //
     }
@@ -58,7 +58,7 @@ class ProductController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Item $product)
+    public function destroy(Generic $generic)
     {
         //
     }
